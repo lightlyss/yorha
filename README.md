@@ -1,3 +1,4 @@
+[![Build Status](https://github.com/lightlyss/yorha/workflows/build/badge.svg)](https://github.com/lightlyss/yorha)
 # YoRHa
 
 CSS based on Nier Automata's interface design language, written in Stylus.
