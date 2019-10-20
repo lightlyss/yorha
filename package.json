@@ -1,10 +1,11 @@
 {
   "name": "yorha",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "CSS based on Nier Automata's interface design language",
   "main": "dist/yorha.css",
   "scripts": {
     "start": "webpack-dev-server",
+    "test": "stylint src -c stylint.json",
     "build": "cd src && stylus -u ../node_modules/nib < main.styl > ../dist/yorha.css && stylus --compress -u ../node_modules/nib < main.styl > ../dist/yorha.min.css"
   },
   "repository": "https://github.com/metakirby5/yorha.git",
@@ -12,17 +13,20 @@
   "license": "MIT",
   "homepage": "https://github.com/metakirby5/yorha",
   "dependencies": {
+    "nib": "1.1.2",
+    "stylus": "0.54.5"
+  },
+  "devDependencies": {
     "coffee-script": "1.12.2",
     "css-loader": "3.2.0",
     "html-webpack-plugin": "2.26.0",
-    "nib": "1.1.2",
     "pug-html-loader": "1.0.10",
     "style-loader": "0.13.1",
     "stylint": "2.0.0",
     "stylint-loader": "1.0.0",
-    "stylus": "0.54.5",
     "stylus-loader": "2.4.0",
     "webpack": "4.41.0",
+    "webpack-cli": "3.3.6",
     "webpack-dev-server": "3.8.1",
     "webpack-merge": "2.3.1"
   }
